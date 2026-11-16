@@ -85,7 +85,7 @@ export default function AgricultoresSection({ alActualizar }) {
       <form onSubmit={manejarEnvio} className="formulario">
         <input
           type="text"
-          placeholder="Nombre del vecino"
+          placeholder="Nombre"
           value={nombre}
           onChange={(e) => setNombre(e.target.value)}
           required

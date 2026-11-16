@@ -96,7 +96,7 @@ export default function CultivosSection({ refrescarTrigger }) {
       <form onSubmit={crearCultivo} className="formulario">
         <input
           type="text"
-          placeholder="Producto (ej. Tomate Cherry)"
+          placeholder="Producto"
           value={nombre}
           onChange={(e) => setNombre(e.target.value)}
           required
@@ -104,11 +104,11 @@ export default function CultivosSection({ refrescarTrigger }) {
         <select value={tipo} onChange={(e) => setTipo(e.target.value)}>
           <option value="cosecha">Cosecha</option>
           <option value="semilla">Semilla</option>
-          <option value="plantula">Plántula</option>
+          
         </select>
         <input
           type="text"
-          placeholder="Cantidad (ej. 3 libras)"
+          placeholder="Cantidad"
           value={cantidad}
           onChange={(e) => setCantidad(e.target.value)}
           required
